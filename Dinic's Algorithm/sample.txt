@@ -1,0 +1,32 @@
+# Sample 1
+
+network = Dinic(4)
+network.add_edge(0, 1, 10)
+network.add_edge(0, 2, 5)
+network.add_edge(1, 2, 15)
+network.add_edge(1, 3, 10)
+network.add_edge(2, 3, 10)
+
+print(f"Maximum Flow (Case 1): {network.max_flow(0, 3)}")
+# Output: Maximum Flow (Case 1): 15
+
+---
+
+# Sample 2
+
+network2 = Dinic(6)
+network2.add_edge(0, 1, 16)
+network2.add_edge(0, 2, 13)
+network2.add_edge(1, 2, 10)
+network2.add_edge(1, 3, 12)
+network2.add_edge(2, 1, 4)
+network2.add_edge(2, 4, 14)
+network2.add_edge(3, 2, 9)
+network2.add_edge(3, 5, 20)
+network2.add_edge(4, 3, 7)
+network2.add_edge(4, 5, 4)
+
+print(f"Maximum Flow (Case 2): {network2.max_flow(0, 5)}")
+# Output: Maximum Flow (Case 2): 23
+
+---

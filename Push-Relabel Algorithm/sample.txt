@@ -1,0 +1,50 @@
+# Sample 1
+
+network = PushRelabel(4)
+network.add_edge(0, 1, 10)
+network.add_edge(0, 2, 5)
+network.add_edge(1, 2, 15)
+network.add_edge(1, 3, 10)
+network.add_edge(2, 3, 10)
+
+print(f"Maximum Flow (Case 1): {network.max_flow(0, 3)}")
+# Output: Maximum Flow (Case 1): 15
+
+---
+
+# Sample 2
+
+network2 = PushRelabel(6)
+network2.add_edge(0, 1, 16)
+network2.add_edge(0, 2, 13)
+network2.add_edge(1, 2, 10)
+network2.add_edge(1, 3, 12)
+network2.add_edge(2, 1, 4)
+network2.add_edge(2, 4, 14)
+network2.add_edge(3, 2, 9)
+network2.add_edge(3, 5, 20)
+network2.add_edge(4, 3, 7)
+network2.add_edge(4, 5, 4)
+
+print(f"Maximum Flow (Case 2): {network2.max_flow(0, 5)}")
+# Output: Maximum Flow (Case 2): 23
+
+---
+
+# Sample 3 (ITS Lecture Slide Network - Slide 4 & 10)
+# S=0, A=1, B=2, C=3, D=4, T=5
+
+network3 = PushRelabel(6)
+network3.add_edge(0, 1, 5)  # S -> A
+network3.add_edge(0, 2, 2)  # S -> B
+network3.add_edge(1, 3, 2)  # A -> C
+network3.add_edge(1, 2, 2)  # A -> B
+network3.add_edge(2, 4, 4)  # B -> D
+network3.add_edge(4, 3, 1)  # D -> C
+network3.add_edge(3, 5, 3)  # C -> T
+network3.add_edge(4, 5, 5)  # D -> T
+
+print(f"Maximum Flow (Case 3): {network3.max_flow(0, 5)}")
+# Output: Maximum Flow (Case 3): 6
+
+---

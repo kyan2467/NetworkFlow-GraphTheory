@@ -2,7 +2,7 @@
 
 ## Algorithm Explanation
 
-The Ford-Fulkerson method finds augmenting paths one by one using DFS or BFS, which can lead to slow convergence in networks with high or floating-point capacities. Dinic's Algorithm drastically speeds up this process by finding multiple augmenting paths simultaneously in polynomial time $ (O(V^2 E) $.
+The Ford-Fulkerson method finds augmenting paths one by one using DFS or BFS, which can lead to slow convergence in networks with high or floating-point capacities. Dinic's Algorithm drastically speeds up this process by finding multiple augmenting paths simultaneously in polynomial time $(O(V^2 E)$.
 
 **Key Concepts:**
 
